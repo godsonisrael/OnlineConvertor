@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+    <head>
+        <title>Online Convertor</title>
+    </head>
+    <link rel="stylesheet" href="app.css">
+    <body>
+    <div class="displayHead">
+        <h1 class="heading">Metric/Imperial unit conversion</h1>
+        <input type="number" onchange="conversion()" class="inputBox" id="inputNumber" placeholder="Enter the Number" value="0" min="0">
+    </div>
+        
+    <div class="results">
+        <h1 class="resultHeading">Length(Meter/Feet)</h1>
+        <p class="resultSupportText"><span id="dispMeter"></span> Meters = <span id="dispCovMeter"></span> Feet | <span id="dispFeet"></span> Feet = <span id="dispCovFeet"></span> Meters</p>
+
+        <h1 class="resultHeading">Volume(Litre/Gallon)</h1>
+        <p class="resultSupportText"><span id="dispLitre"></span> Litres = <span id="dispCovLitre"></span> Gallons | <span id="dispGallon"></span> Gallons = <span id="dispCovGallon"></span> Litres</p>
+
+        <h1 class="resultHeading">Mass(Kilogram/Pound)</h1>
+        <p class="resultSupportText"><span id="dispKilo"></span> Kilos = <span id="dispCovkilo"></span> Pounds | <span id="dispPound"></span> Pounds = <span id="dispCovPound"></span> Kilos</p>
+    </div>
+
+        <script src="app.js"></script>
+    </body>
+</html>
