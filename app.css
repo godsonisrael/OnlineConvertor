@@ -34,7 +34,7 @@ input::placeholder{
     font-weight: 900;
     font-size: 100px;
     padding: 10%;
-    width: fit-content;
+    width: 300px;
 }
 
 .displayHead{
