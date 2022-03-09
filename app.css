@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css?family=Muli&display=swap');
 
 html, body{
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+
+    position: relative;
+
     text-align: center;
-    background: linear-gradient(110deg, #89ABE3FF 35%, #EA738DFF 55%);
+    background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .2)), linear-gradient(110deg, #89ABE3FF 35%, #EA738DFF 55%);
     background-attachment: fixed;
 }
 
@@ -23,7 +23,7 @@ input:focus{
 input::placeholder{
     font-family: 'Muli', sans-serif;
     font-size: medium;
-    color: gray;
+    color: rgba(0, 0, 0, 0.541);
 }
 
 .inputBox{
@@ -31,13 +31,21 @@ input::placeholder{
     border: none;
     text-align: center;
     font-family: 'Muli', sans-serif;
+    color: #ffff;
     font-weight: 900;
     font-size: 100px;
     padding: 10%;
-    width: 300px;
+    width: 250px;
 }
 
 .displayHead{
+    position: absolute;
+    top: 35vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
+    border-radius: 10px;
+
     font-family: 'Muli', sans-serif;
     font-style: normal;
     font-weight: 800;
@@ -47,10 +55,16 @@ input::placeholder{
 }
 
 .results{
+    position: absolute;
+    top: 80vh;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 80%;
     background-color: black;
     border-radius: 10px;
     font-family: 'Muli', sans-serif;
     font-style: normal;
+    box-shadow: 5px 5px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .resultHeading{
